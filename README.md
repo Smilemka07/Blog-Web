@@ -37,8 +37,10 @@ The goal of this project was to strengthen understanding of React hooks, client-
 * React Router
 * Vite
 * CSS (Custom styling)
+
 **API:**
-*DummyJSON REST API
+* DummyJSON REST API
+
 **Deployment:**
 * Vercel
 
