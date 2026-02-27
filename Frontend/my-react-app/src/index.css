@@ -1,0 +1,400 @@
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background-color: #f3f4f6;
+  color: #111827;
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+   width: 92%;
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 40px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.06);
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  padding: 14px 0;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+a {
+  text-decoration: none;
+  color: #111827;
+  font-size: 16px;
+  transition: all 0.2s ease;
+}
+
+a:hover {
+  color: #2563eb;
+  padding-left: 6px;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 25px;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.back-link:hover {
+  color: #111827;
+}
+
+p {
+  line-height: 1.7;
+  color: #374151;
+  font-size: 16px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  display: block;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.04);
+  transition: all 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+}
+
+.card h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.hero {
+  height: 260px;
+  background-image: url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.hero h1,
+.hero p {
+  position: relative;
+  z-index: 1;
+  color: #ffffff;
+   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+}
+
+.hero p {
+  margin-top: 12px;
+  font-size: 17px;
+  font-weight: 400;
+  opacity: 0.9;
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin: 0;
+}
+
+.card {
+  display: block;
+  background: white;
+  border-radius: 14px;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+  transition: all 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.1);
+}
+
+
+.card-image {
+  height: 180px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.card-content {
+  padding: 18px;
+}
+
+.card h2 {
+  font-size: 17px;
+  margin-bottom: 8px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #6b7280;
+  line-height: 1.5;
+}
+
+/* HERO SECTION */
+
+.hero {
+  height: 320px;
+  background-image: url("https://picsum.photos/1600/900?blur=2");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* horizontal center */
+  text-align: center;
+  color: white;
+  position: relative;
+  padding: 0 20px;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6); /* darker for contrast */
+}
+
+.hero h1,
+.hero p,
+.search-wrapper {
+  position: relative;
+  z-index: 1;
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin: 0;
+}
+
+.hero p {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+/* SEARCH BAR */
+
+.search-wrapper {
+  margin-top: 30px;
+  width: 90%;
+  max-width: 420px;
+  position: relative;
+}
+
+.search-icon {
+  position: absolute;
+  left: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+}
+
+.search-icon svg {
+  stroke: #ffffff;
+}
+
+.search-input {
+  width: 100%;
+  padding: 14px 20px 14px 50px;
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 50px;
+  color: #ffffff;
+  font-size: 16px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.search-input::placeholder {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.search-input:focus {
+  border-color: #ffffff;
+}
+
+
+.pagination {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.pagination button {
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: none;
+  background: #111827;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+.pagination button:disabled {
+  background: #9ca3af;
+  cursor: not-allowed;
+}
+
+.pagination span {
+  font-size: 14px;
+  color: #374151;
+}
+
+/* Toggle button */
+.theme-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 2;
+}
+
+/* DARK MODE STYLES */
+
+body.dark {
+  background-color: #111827;
+  color: #f3f4f6;
+}
+
+body.dark .container {
+  background: #1f2937;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+body.dark .card {
+  background: #1f2937;
+  color: #f3f4f6;
+}
+
+body.dark .card p {
+  color: #9ca3af;
+}
+
+body.dark .pagination button {
+  background: #f3f4f6;
+  color: #111827;
+}
+
+/* POST HERO */
+
+.post-hero {
+  height: 420px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 40px;
+  color: white;
+}
+
+.post-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0,0,0,0.7),
+    rgba(0,0,0,0.2),
+    rgba(0,0,0,0)
+  );
+}
+
+.post-hero h1,
+.post-back {
+  position: relative;
+  z-index: 1;
+}
+
+.post-hero h1 {
+  font-size: 42px;
+  margin: 0;
+  max-width: 800px;
+}
+
+/* BACK LINK */
+
+.post-back {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* CONTENT CONTAINER */
+
+.post-container {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.post-body {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #374151;
+}
+
+body.dark .post-container {
+  color: #f3f4f6;
+}
+
+body.dark .post-body {
+  color: #d1d5db;
+}
