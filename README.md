@@ -105,7 +105,4 @@ To support refreshing dynamic routes (e.g., `/post/1` ) on Vercel, a rewrite rul
 * Add backend integration for full CRUD functionality
 * Add category-based filtering
 * Add animations for page transitions
-* Improve accessibility (ARIA roles, keyboard navigation)
-
----
-This project demonstrates practical React fundamentals and production-level deployment understanding
+* Improve accessibility
